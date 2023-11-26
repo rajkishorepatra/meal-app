@@ -14,7 +14,7 @@ The Meal Explorer App is your go-to companion for culinary inspiration and organ
 
 **Github Pages -** https://rajkishorepatra.github.io/meal-app
 
-**Vercel -** https://meal-app-assignment.vercel.app/
+**Vercel -** https://meal-app-delta.vercel.app
 
 
 ## Installation
