@@ -1,6 +1,5 @@
 {
   "name": "meal-app",
-  "homepage": "https://rajkishorepatra.github.io/meal-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
