@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 function Favourite(props) {
-  const { mealId, size } = props;
+  const { mealId, size ,setMealStatus} = props;
   const [isfav, setIsfav] = useState(false);
 
   useEffect(() => {
@@ -23,6 +23,7 @@ function Favourite(props) {
       setIsfav(false);
       items = items.filter((item) => item.id !== mealId);
       localStorage.setItem("favItem", JSON.stringify(items));
+      setMealStatus(false);
     } else {
       setIsfav(true);
       let newId = { id: mealId };
