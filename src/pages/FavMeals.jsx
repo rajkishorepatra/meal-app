@@ -32,7 +32,8 @@ function FavMeals(e) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+          {/* Favourite Meal Cards */}
+          <div className="grid z-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
             {mealData.map((meal) => (
               <MealCard key={meal.idMeal} data={meal} />
             ))}

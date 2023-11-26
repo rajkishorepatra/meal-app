@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Favourite from "./Favourite";
 
@@ -20,7 +20,7 @@ const MealCard = ({ data }) => {
               setMealStatus={setMealStatus}
             />
           </div>
-          <Link to={{ pathname: `/det/id=${data.idMeal}` }}>
+          <Link to={{ pathname: `/meal-app/det/id=${data.idMeal}` }}>
             <div className="px-6 py-4 cursor-pointer">
               <div className="font-bold text-xl mb-2">{data.strMeal}</div>
               <p className="text-gray-700 text-base">

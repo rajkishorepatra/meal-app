@@ -12,11 +12,11 @@ function App() {
       <Navbar />
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Navigate to="/meal-app" replace />} />
-          <Route index path='/meal-app' element={<Landing />} />                      {/* Landing Page */}
-          <Route path='/meal-app/det/*' element={<MealDetails />} />            {/* Meal Details Page */}
-          <Route path='/meal-app/fav/' element={<FavMeals />} />                 {/* Favourite Meals Page */}
-          <Route path='/*' element={<NotFound />} />                            {/* 404 Error Page */}
+          <Route path='/' element={<Navigate to="/meal-app" replace />} />             {/* Landing Page */} 
+          <Route index path='/meal-app' element={<Landing />} />                       {/* Landing Page */}
+          <Route path='/meal-app/det/*' element={<MealDetails />} />                   {/* Meal Details Page */}
+          <Route path='/meal-app/fav/' element={<FavMeals />} />                       {/* Favourite Meals Page */}
+          <Route path='/*' element={<NotFound />} />                                   {/* 404 Error Page */}
         </Routes>
       </BrowserRouter>
       <Footer />
