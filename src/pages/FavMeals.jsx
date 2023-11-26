@@ -23,7 +23,7 @@ function FavMeals(e) {
     <>
       <div className="bg-[#eef7f8] m-5 rounded-2xl h-auto p-4">
         <div className="w-full  p-4 text-gray-900 m-auto text-center">
-          <div className="mb-4">
+          <div className="mb-4" data-aos="fade" data-aos-duration="3000">
             <h1 className="text-6xl lg:m-4 text-[#17b97a] font-bold">
               My Favourites
             </h1>
@@ -33,7 +33,11 @@ function FavMeals(e) {
           </div>
 
           {/* Favourite Meal Cards */}
-          <div className="grid z-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+          <div
+            className="grid z-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             {mealData.map((meal) => (
               <MealCard key={meal.idMeal} data={meal} />
             ))}

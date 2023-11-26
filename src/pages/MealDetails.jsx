@@ -20,14 +20,22 @@ function MealDetails() {
     <>
       {meal !== undefined ? (
         <div className="flex flex-wrap bg-[#eef7f8] lg:h-auto m-8 rounded-xl">
-          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4 items-center">
+          <div
+            className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4 items-center"
+            data-aos="fade-right"
+            data-aos-duration="2500"
+          >
             <img
               src={meal.strMealThumb}
               className="w-4/5 rounded sm:m-auto m-auto lg:sticky md:sticky items-center lg:top-40 md:top-40"
               alt="meal thumbnail"
             />
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4 text-gray-900 m-auto">
+          <div
+            className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4 text-gray-900 m-auto"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
             <h1 className="text-4xl lg:m-4 text-[#17b97a] lg:font-semibold font-bold">
               {meal.strMeal}
             </h1>

@@ -22,7 +22,11 @@ function RandomMeal() {
   return (
     <div>
       <div className="flex flex-wrap bg-[#eef7f8] m-auto lg:h-screen p-4">
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4 text-gray-900 m-auto">
+        <div
+          className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4 text-gray-900 m-auto"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           <h1 className="text-6xl lg:m-4 text-[#17b97a] font-semibold">
             Still Deciding What to Cook?
           </h1>
@@ -36,7 +40,11 @@ function RandomMeal() {
             Get Random Meal
           </button>
         </div>
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4 m-auto">
+        <div
+          className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4 m-auto"
+          data-aos="flip-right"
+          data-aos-duration="3000"
+        >
           {meal !== undefined ? <MealCard data={meal} /> : <></>}
         </div>
       </div>
